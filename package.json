@@ -1,0 +1,23 @@
+{
+  "name": "cough",
+  "version": "1.0.0",
+  "description": "coffee_script is better in snake_case",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony --harmony_proxies --compilers coffee:coffee-script/register ./test -R spec",
+    "build": "coffee --bare --output lib --compile src"
+  },
+  "author": "Nick Bottomley (github.com/nickb1080)",
+  "license": "MIT",
+  "dependencies": {
+    "camel-case": "^1.1.1",
+    "harmony-reflect": "^1.1.2",
+    "is-primitive": "^2.0.0",
+    "snake-case": "^1.1.1"
+  },
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "coffee-script": "^1.9.1",
+    "mocha": "^2.2.1"
+  }
+}
