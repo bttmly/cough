@@ -28,4 +28,13 @@ theModule.someMethodHere();
 theModule.anotherMethodHere();
 ```
 
+Alternately, you might use it in a constructor
+```coffeescript
+class Something
+  constructor: ->
+    return cough @
 
+  instance_method_one: ->
+```
+
+Instances will respond to `instance_method_one()` or `instanceMethodOne()`.
