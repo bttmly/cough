@@ -2,6 +2,8 @@
 
 It's pleasant to write CoffeeScript in snake case style, but module consumers are more than likely using plain JavaScript and expecting camel cased method names. 
 
+This module requires an environment supporting [Proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy).
+
 CoffeeScript
 
 ```coffeescript
