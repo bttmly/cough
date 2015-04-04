@@ -11,7 +11,7 @@ cough = require "cough"
 fs = cough require "fs"
 
 # this works
-data = fs.read_file_sync("some-file.json")
+data = fs.read_file_sync "some-file.json"
 
 # or maybe export something snake cased, wrapped with cough
 module.exports = cough
