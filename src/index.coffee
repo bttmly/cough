@@ -10,17 +10,17 @@ cases = (s) -> [camel_case(s), snake_case(s)]
 
 handler =
   has: (target, prop) ->
-    [camel, snake] = cases prop
     if Reflect.has target, prop  then return true
+    [camel, snake] = cases prop
     if Reflect.has target, camel then return true
     if Reflect.has target, snake then return true
     false
 
   get: (target, prop) ->
+    if Reflect.has target, prop  then return Reflect.get target, prop
     [camel, snake] = cases prop
-    if Reflect.get target, prop  then return target[prop]
-    if Reflect.get target, camel then return target[camel]
-    if Reflect.get target, snake then return target[snake]
+    if Reflect.has target, camel then return Reflect.get target, camel
+    if Reflect.has target, snake then return Reflect.get target, snake
 
 
 module.exports = cough = (obj) ->
