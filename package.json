@@ -1,6 +1,6 @@
 {
   "name": "cough",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "coffee_script is better in snake_case",
   "main": "index.js",
   "scripts": {
