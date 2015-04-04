@@ -21,7 +21,8 @@ module.exports =
 
 JavaScript (importing the exported object above)
 ```js
-var theModule = require("coffee-script-file-above")
+var cough = require("cough");
+var theModule = cough(require("coffee-script-file-above"));
 
 // these work
 theModule.someMethodHere();
