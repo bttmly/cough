@@ -6,7 +6,7 @@ camel_case = require "camel-case"
 snake_case = require "snake-case"
 is_primitive = require "is-primitive"
 
-cases = (s) -> [camel_case(s), snake_case(s)]
+cases = (s) -> [(camel_case s), snake_case s]
 
 handler =
   has: (target, prop) ->
