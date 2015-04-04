@@ -1,4 +1,4 @@
-# cough
+# cough [![Build Status](https://travis-ci.org/nickb1080/cough.svg?branch=master)](https://travis-ci.org/nickb1080/cough)
 
 It's pleasant to write CoffeeScript in snake case style, but module consumers are more than likely using plain JavaScript and expecting camel cased method names. 
 
