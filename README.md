@@ -13,16 +13,15 @@ fs = cough require "fs"
 # this works
 data = fs.read_file_sync("some-file.json")
 
-# or maybe export something snake cased
-module.exports = 
+# or maybe export something snake cased, wrapped with cough
+module.exports = cough
   some_method_here: -> # ...
   another_method_here: -> # ...
 ```
 
 JavaScript (importing the exported object above)
 ```js
-var cough = require("cough");
-var theModule = cough(require("coffee-script-file-above"));
+var theModule = require("coffee-script-file-above");
 
 // these work
 theModule.someMethodHere();
